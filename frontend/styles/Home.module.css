@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh; /* Ensures that the container spans the full height of the viewport */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: rgba(244, 244, 244, 0.8);
+  margin-left: 256px; /* Matches the sidebar width for proper alignment */
+  min-height: 100vh;
+  color: #000; /* Ensures text is black and readable */
+}
+
+h2 {
+  font-family: "IBM Plex Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 125% */
+  color: #333333; /* Darker color for better contrast */
+}
+
+p {
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--text-text-secondary, var(--Text-text-secondary, #525252));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  /* Fixed heading styles/heading-compact-01 */
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.16px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.chart {
+  width: 48%; /* 48% to create some space between the charts */
+}
+
+.bx--side-nav__items {
+  padding-top: 16px;
+}
+
+.bx--side-nav__item {
+  margin-bottom: 16px;
+}
+
+.bx--side-nav__link {
+  color: #000; /* Black text for links */
+  font-weight: bold; /* Bold font for the text */
+}
+
+.bx--side-nav__link--current {
+  background-color: #e0e0e0; /* Light gray background for the active link */
+}
+
+.bx--tabs {
+  margin-bottom: 20px;
+}
+
+/* Sidebar and Header styling */
+.bx--side-nav {
+  background: var(--Background-background, #fff);
+  width: 256px; /* Fixed width for the sidebar */
+  position: fixed; /* Fixed position for sidebar */
+  top: 0;
+  bottom: 0;
+  border-right: 1px solid #e0e0e0; /* Light gray border to separate the sidebar */
+}
+
+.bx--side-nav__header {
+  padding: 1rem;
+  background-color: #f4f4f4; /* Matches sidebar background */
+}
+
+.bx--header__name {
+  color: #333333; /* Dark gray text for the header name */
+}
+
+.bx--header__name--prefix {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.bx--tabs__nav-item--selected {
+  border-bottom: 3px solid #0f62fe; /* IBM Blue for the active tab */
+}
+
+.bx--tabs__nav-link {
+  font-weight: bold;
+}
+
+.bx--tabs__nav-link:focus {
+  outline: none;
+  border-bottom: 3px solid #0f62fe;
+}
+
+.bx--tab-panels {
+  margin-top: 1rem;
+}
+
+.bx--table-container {
+  margin-top: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .chart-container {
+    flex-direction: column;
+  }
+
+  .chart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .export-button {
+    background-color: #393939; /* Darker background */
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+
+  .soil-data-header {
+    margin-bottom: 10px; /* Reduce the gap between the header and the button */
+  }
+
+  .bx--data-table-container {
+    position: relative; /* Ensures that the button stays at the top-right */
+    padding-right: 100px; /* Space for the button */
+  }
+
+  .bx--pagination {
+    margin-top: 20px; /* Add some space above the pagination controls */
+  }
+  .email_text_input {
+    color: var(--text-text-primary, var(--Text-text-primary, #161616));
+
+    /* Utility styles/label-01 */
+    font-family: "IBM Plex Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.32px;
+    width: 288px;
+    height: 48px;
+    position: absolute;
+    border-bottom: 1px solid var(--Border-border-strong-01, #8d8d8d);
+    background: var(--Field-field-01, #f4f4f4);
+  }
+}

@@ -1,0 +1,202 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 66px;
+  margin-left: 80px;
+  margin-right: 250px;
+}
+
+.title {
+  color: #000;
+
+  /* Fluid styles/XLG/fluid-heading-04 */
+  font-family: "IBM Plex Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 125% */
+}
+
+.forgotPassword {
+  display: block;
+  margin: 1rem 0;
+  text-align: right;
+  cursor: pointer;
+  align-self: stretch;
+  color: var(--Link-link-primary, #0f62fe);
+
+  /* Link/helper-text-01 */
+  font-family: "IBM Plex Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.32px;
+  text-decoration-line: underline;
+}
+
+.footer {
+  width: 269px;
+  height: 36px;
+  margin-top: 150px;
+}
+
+.imageSection {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.imageText {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 3;
+  color: white;
+}
+
+.imageText h2 {
+  font-size: 2rem;
+}
+
+.imageText p {
+  font-size: 1.25rem;
+}
+.email-input-div {
+  width: 288px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+.email-input {
+  position: absolute;
+  border-bottom: 1px solid var(--Border-border-strong-01, #8d8d8d);
+  background: var(--Field-field-01, #f4f4f4);
+}
+.password-input-div {
+  width: 288px;
+  height: 48px;
+  margin-bottom: 40px;
+}
+.password-input {
+  border-bottom: 1px solid var(--Border-border-strong-01, #8d8d8d);
+  background: var(--Field-field-01, #f4f4f4);
+  margin-bottom: 4px;
+}
+.login-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #009f3f;
+  color: var(--text-text-on-color, var(--Text-text-on-color, #fff));
+
+  /* Body styles/body-compact-01 */
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.16px;
+}
+.copyright_text {
+  color: #000;
+
+  /* Body styles/body-compact-01 */
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.16px;
+}
+.welcomeMsg {
+  color: #fff;
+
+  /* Fixed heading styles/heading-07 */
+  font-family: "IBM Plex Sans";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px; /* 118.519% */
+
+  width: 575px;
+  height: auto;
+
+  margin-left: 61px;
+  margin-top: 622px;
+}
+.loginMsg {
+  color: #fff;
+
+  /* Fixed heading styles/heading-04 */
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: 10;
+
+  margin-left: 61px;
+}
+.forgot-password-modal {
+  position: relative;
+  width: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.forgot-password-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forgot-password-content {
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  width: 45%;
+}

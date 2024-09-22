@@ -1,0 +1,37 @@
+{
+  "name": "hariyalikart-dashboard",
+  "dependencies": {
+    "@carbon/icons-react": "^11.49.0",
+    "@carbon/react": "^1.66.0",
+    "axios": "^1.7.5",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.3",
+    "endent": "^2.1.0",
+    "formik": "^2.4.6",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.3",
+    "next": "^14.2.5",
+    "next-auth": "^5.0.0-beta.20",
+    "nodemailer": "^6.9.14",
+    "npm-force-resolutions": "^0.0.10",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-csv": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "sass": "^1.63.6"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "preinstall": "npx npm-force-resolutions",
+    "prettier": "npx prettier --write\"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
+    "prettier:verify": "npx prettier --list-different\"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\""
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "prettier": "3.3.3"
+  },
+  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247"
+}

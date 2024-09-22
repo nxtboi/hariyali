@@ -34,7 +34,7 @@ HariyaliKart Dashboard is a web-based application designed to monitor and contro
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/nxtboi/hariyali.git
+git clone https://github.com/nxtboi/hariyalikart-dashboard.git
 cd hariyalikart-dashboard
 ```
 
